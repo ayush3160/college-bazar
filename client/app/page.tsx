@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ShieldCheck, Users, Zap } from "lucide-react";
+import Link from "next/link";
 
 const features = [
   {
@@ -65,12 +66,14 @@ export default function Home() {
             Your College Marketplace
           </h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Buy and sell items within your college community. Connect with fellow students, 
+            Buy and sell items within your college community. Connect with fellow students,
             find great deals, and make extra money.
           </p>
-          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-            Get Started
-          </Button>
+          <Link href="/register">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              Get Started
+            </Button>
+          </Link>
         </div>
       </section>
 

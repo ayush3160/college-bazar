@@ -1,0 +1,26 @@
+{
+  "name": "college-bazar",
+  "version": "1.0.0",
+  "description": "College-Bazar is web based marketplace application which enables college students to buy and sell their products",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install --prefix client && npm install --prefix server",
+    "client": "npm start --prefix client",
+    "server": "npm run dev --prefix server",
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "build": "npm run build --prefix client && npm run build --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayush3160/college-bazar.git"
+  },
+  "author": "Ayush Sharma (ayush3160)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayush3160/college-bazar/issues"
+  },
+  "homepage": "https://github.com/ayush3160/college-bazar#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
